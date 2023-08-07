@@ -1,20 +1,25 @@
-
 .vertical-menu {
-    width: 200px; 
+    width: 300px; 
     display: inline;
     background-color: #4bc7cf;
+
   }
-  
+  .container{
+    background-color: whitesmoke;
+    display: block;
+    margin-top: 0px;
+}
+.active{
+    margin-right: 700px;
+}
+/* .links{
+    margin-left: 150px;
+} */
+
   .vertical-menu a {
     background-color: #eee; 
     color: black; 
     padding: 12px; 
     text-decoration: none; 
   
-  .vertical-menu a:hover {
-    background-color: #ccc; 
-  
-  .vertical-menu a.active {
-    background-color: #04AA6D; 
-    color: white;
-  }
+ 
