@@ -1,7 +1,15 @@
-.container {
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
     background-color: whitesmoke;
-    display: inline;
-    margin-top: 0px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .topnav {
@@ -28,20 +36,14 @@
     color: white;
 }
 
-body, html {
-    height: 100%;
+.hero-section {
+    position: relative;
+    background-image: url('photos/PromPhoto.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
 }
 
-/* The hero image */
-.hero-image img {
-    height: auto;
-    width: 1319px;
-}
-/* .hero-image{
-   background-image:url("/photos/PromPhoto.jpg");
-} */
-
-/* Place text in the middle of the image */
 .hero-text {
     text-align: center;
     position: absolute;
@@ -49,6 +51,5 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
-    text-style: bold;
+    font-weight: bold;
 }
-
