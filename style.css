@@ -60,3 +60,14 @@ body, html {
     border: none;
     cursor: pointer;
 }
+#linkedin-button {
+    font-size: 16px;
+    background-color: rgba(251, 251, 251, 0.386);
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-image: url('/photos/linkedIn-button-image.png'); /* Check the image path */
+    background-size: cover; /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
