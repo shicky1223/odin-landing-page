@@ -53,3 +53,10 @@ body, html {
     color: black;
     font-weight: bold;
 }
+#resume-button{
+    font-size: 16px;
+    background-color: rgba(251, 251, 251, 0.386);;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
