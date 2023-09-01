@@ -36,6 +36,11 @@ body, html {
     color: white;
 }
 
+.topnav a.logo{
+    /* font-family: Brush Script MT; */
+    font-weight: bold;
+}
+
 .hero-section {
     position: relative;
     background-image: url('photos/PromPhoto.jpg');
@@ -53,6 +58,7 @@ body, html {
     color: black;
     font-weight: bold;
 }
+
 #resume-button{
     font-size: 16px;
     background-color: rgba(251, 251, 251, 0.386);;
@@ -60,6 +66,7 @@ body, html {
     border: none;
     cursor: pointer;
 }
+
 #linkedin-button {
     font-size: 16px;
     background-color: rgba(251, 251, 251, 0.386);
