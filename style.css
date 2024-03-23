@@ -46,7 +46,7 @@ body, html {
     background-image: url('photos/PromPhoto.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Adjust the height as needed */
+    height: 100vh; 
 }
 
 .hero-text {
@@ -73,8 +73,8 @@ body, html {
     color: white;
     border: none;
     cursor: pointer;
-    background-image: url('/photos/linkedIn-button-image.png'); /* Check the image path */
-    background-size: cover; /* Adjust the background size as needed */
+    background-image: url('/photos/linkedIn-button-image.jpg'); 
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center center;
 }
