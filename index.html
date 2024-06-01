@@ -10,36 +10,39 @@
     <div class="container">
         <div class="topnav">
             <a href="index.html" class="active logo"> SS </a>
-            <a href="https://shicky1223.github.io/Anitas-Kitchen/" class="links" target="_blank"> Recipe </a>
-            <a href="https://shicky1223.github.io/basic_calculator/" class="links">Calculator</a> 
-            <a href="https://github.com/shicky1223" class="links" target="_blank">Github</a> 
+            <div class="dropdown">
+                <button class="dropbtn">Projects</button>
+                <div class="dropdown-content">
+                    <a href="https://shicky1223.github.io/Anitas-Kitchen/" target="_blank">Recipe</a>
+                    <a href="https://shicky1223.github.io/basic_calculator/" target="_blank">Calculator</a>
+                    <!-- Add more projects as needed -->
+                </div>
+            </div>
+            <a href="aboutMe.html">About</a>
         </div>
         <section class="hero-section">
           <div class="hero-text">
               <h1>I am Shatkratu Swarnkar</h1>
               <p>And I am an undergraduate Computer Science student at Rutgers University</p>
-              <button  id = "resume-button" type="button">Resume</button>
-              <script >
-                const resumeButton = document.getElementById("resume-button");
-
-                resumeButton.addEventListener('click',function() {
-                    window.location.href = 'https://docs.google.com/document/d/13Aee_j7vK1064rPA93Mq0wnStBtsW_93OdqvjLPOFWE/edit?usp=sharing'
+              <div class="button-container">
+                  <button id="resume-button" type="button"class="icon-button resume">Resume</button>
+                  <button id="github-button" type="button" class="icon-button github">GitHub</button>
+                  <button id="linkedin-button" type="button" class="icon-button linkedin">LinkedIn</button>
+              </div>
+              <script>
+                document.getElementById("resume-button").addEventListener('click', function() {
+                    window.location.href = 'https://docs.google.com/document/d/13Aee_j7vK1064rPA93Mq0wnStBtsW_93OdqvjLPOFWE/edit?usp=sharing';
+                });
+                document.getElementById("github-button").addEventListener('click', function() {
+                    window.location.href = 'https://github.com/shicky1223';
+                });    
+                document.getElementById("linkedin-button").addEventListener('click', function() {
+                    window.location.href = 'https://www.linkedin.com/in/shatkratu-swarnkar/';
                 });
               </script>
-              <button id="linkedin-button" type="button">
-                <!-- <img src="/photos/linkedIn-button-image.jpg" alt="LinkedIn Logo" /> -->LinkedIn
-              </button>
-              
-              <script >
-                const linkedinButton = document.getElementById("linkedin-button");
-
-                linkedinButton.addEventListener('click',function() {
-                    window.location.href = 'https://www.linkedin.com/in/shatkratu-swarnkar/'
-                });
-              </script>
-              
           </div>
       </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

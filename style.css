@@ -3,13 +3,15 @@ body, html {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
+    width: 100%;
     background-color: whitesmoke;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .topnav {
@@ -36,16 +38,63 @@ body, html {
     color: white;
 }
 
-.topnav a.logo{
-    /* font-family: Brush Script MT; */
+.topnav a.logo {
     font-weight: bold;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
 .hero-section {
     position: relative;
     background-image: url('photos/PromPhoto.jpg');
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 100vh; 
 }
 
@@ -54,27 +103,75 @@ body, html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 90%);
+    transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
 }
 
-#resume-button{
-    font-size: 16px;
-    background-color: rgba(251, 251, 251, 0.386);;
-    color: white;
-    border: none;
-    cursor: pointer;
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-#linkedin-button {
+#resume-button, .icon-button {
     font-size: 16px;
-    background-color: rgba(251, 251, 251, 0.386);
+    background-color: #4CAF50;
     color: white;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    background-image: url('/photos/linkedIn-button-image.jpg'); 
-    background-size: cover; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
+    padding-left: 40px; /* Adjust according to the logo size */
+}
+
+#resume-button:hover, .icon-button:hover {
+    background-color: #45a049;
+}
+
+#resume-button, .icon-button {
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px; /* Adjust according to the logo size */
+}
+
+#resume-button:hover, .icon-button:hover {
+    background-color: #45a049;
+}
+.icon-button.resume {
+    background-image: url('photos/resume-icon-png-15.png'); /* Replace with the correct path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px; /* Adjust according to the logo size */
+}
+.icon-button.github {
+    background-image: url('photos/githubLogo.webp'); /* Replace with the correct path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px; /* Adjust according to the logo size */
+}
+
+.icon-button.linkedin {
+    background-image: url('photos/linkedinLogo.png'); /* Replace with the correct path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px; /* Adjust according to the logo size */
 }

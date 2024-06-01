@@ -2,6 +2,8 @@ Bug numbers
 
 01: I have added a logo for the LinkedIn button but it's not showing up as of right now. Requires attention on next open.
         - corrected the file path for image however still doesnt work 
+- fixed this issue
 
+02: Background image keeps changing need to make it so that it doesnt move when the window shape changes
 
 
