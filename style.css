@@ -89,13 +89,20 @@ body, html {
     background-color: #3e8e41;
 }
 
+.hero-section-wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .hero-section {
     position: relative;
     background-image: url('photos/PromPhoto.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh; 
+    background-attachment: fixed; /* Ensure the background image stays fixed */
+    height: 100%;
+    width: 100%;
 }
 
 .hero-text {
@@ -114,7 +121,6 @@ body, html {
     gap: 10px;
 }
 
-
 #resume-button, .icon-button {
     font-size: 16px;
     background-color: #4CAF50;
@@ -135,25 +141,6 @@ body, html {
     background-color: #45a049;
 }
 
-#resume-button, .icon-button {
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px; /* Adjust according to the logo size */
-}
-
-#resume-button:hover, .icon-button:hover {
-    background-color: #45a049;
-}
 .icon-button.resume {
     background-image: url('photos/resume-icon-png-15.png'); /* Replace with the correct path */
     background-size: contain;
@@ -161,6 +148,7 @@ body, html {
     background-position: left center;
     padding-left: 40px; /* Adjust according to the logo size */
 }
+
 .icon-button.github {
     background-image: url('photos/githubLogo.webp'); /* Replace with the correct path */
     background-size: contain;
