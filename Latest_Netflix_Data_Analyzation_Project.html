@@ -7475,7 +7475,43 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1ed31fdd">
+<main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=51d47cfb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a4db56c8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>While on Kaggle I stumbled upon an interesting dataset. The data was created because Netflix has a quantity over quality problem with their content. For those not familiar with Netflix, they are an American subscription video on-demand over-the-top streaming service. The service primarily distributes original and acquired films and television shows from various genres, and it is available internationally in multiple languages.</p>
+<p>With this dataset I asked myself 4 questions and used EDA to help me get a better understanding of the problem. My questions are as follows:</p>
+<ol>
+<li>When we open Netflix we see that they are mainly two categories which are movies or series. Which category is more popular?</li>
+<li>What are the popular genres in movies and series?</li>
+<li>The most watched languages?</li>
+<li>The most popular TV Series and Movies from IMDb and Rotten Tomatoes?</li>
+</ol>
+<p>For the analysis of the data, I used the following libraries:</p>
+<ol>
+<li>pandas</li>
+<li>numpy</li>
+<li>seaborn</li>
+<li>matplotlib</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1ed31fdd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8761,8 +8797,8 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Now we will begin the analyzation of our dataset. The first question we want to answer is 
-1.) When we open Netflix we see that they are mainly two categories which are movies or series. Which category is more popular?</p>
+<p>Now we will begin the analyzation of our dataset. The first question we want to answer is:</p>
+<p>1.) When we open Netflix we see that they are mainly two categories which are movies or series. Which category is more popular?</p>
 <p>We will use a barplot to see which is more popular.</p>
 </div>
 </div>
@@ -8806,8 +8842,10 @@ dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>From our data plot above we can see that there are more movies than there are series on Netflix, hence we can assume that they are the popular choice.</p>
-<p>We will now move onto our next question.
- 2) What are the different types of genres?</p>
+<p>We will now move onto our next question.</p>
+<ol start="2">
+<li>What are the popular genres in movies and series?</li>
+</ol>
 <p>For this lets first divide our Dataframe into two different dataframes which are df_movies and df_series</p>
 </div>
 </div>
